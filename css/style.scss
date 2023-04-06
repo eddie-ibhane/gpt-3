@@ -35,6 +35,10 @@ a {
     text-decoration: none;
     cursor: pointer;;
 }
+a:hover {
+    font-size: 1.2rem;
+    transition: 0.5s;
+}
 
 .gradient__bg {
     background:-moz-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 25%);
@@ -84,7 +88,7 @@ a {
               transform: scale(1);
     }
 }
-  
+
 nav .navbar-brand, .nav-link, .btn {
     font-family: 'Manrope', sans-serif;
     color: #ffffff;
@@ -105,6 +109,10 @@ nav .btn {
     padding: 4px 20px;
     background: #FF4820;
     margin-left: 20px;
+}
+nav .btn:hover {
+    background: #fff;
+    color: #FF4820;
 }
 
 .navbar-toggler{
@@ -182,6 +190,11 @@ nav .btn {
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
 }
+.header-content__input button:hover {
+    background: #fff;
+    color: #FF4820;
+    transition: 0.7s;
+}
 
 .header-content__people {
     width: 100%;
@@ -213,13 +226,14 @@ nav .btn {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-left: 1rem;
+    // padding-left: 1rem;
+    width: 100%;
     
 }
 
 .header-image img  {
     width: 100%;
-    height: 600px;
+    height: auto;
 }
 
 @media screen and (max-width:1196px){
@@ -282,6 +296,24 @@ nav .btn {
 }
 
 @media screen and (max-width:768px){
+    header-menu nav {
+        padding: 32px 0 !important;
+    }
+    .sign-up {
+        // .nav-link {
+        //     margin-left: 20px;
+        // }
+        .nav-link {
+            margin: 6px 0px;
+
+        }
+        .btn {
+            width: 100px;
+        }
+    }
+    nav .nav-item {
+        margin-left: 1px;
+    }
     .header-content h1{
         font-size: 2.5rem;
         margin-top: 60px;
@@ -333,6 +365,13 @@ nav .btn {
         font-size: 2rem;
         padding: 0 1rem 0 0;
     }
+    nav .navbar-brand {
+        padding: 32px;
+    }
+    .header-content {
+        padding: 0 32px;
+    }
+    
 }
 
 //---------------- partners--------------------------//
@@ -764,6 +803,12 @@ nav .btn {
     }
 }
 
+@media screen and (max-width:600px) {
+    .gpt3__possibility .row {
+        padding: 0 32px;
+    }
+}
+
 
 //------------cta section---------//
 
@@ -813,6 +858,11 @@ nav .btn {
     outline: none;
     cursor: pointer;
     color: #fff;
+}
+.cta-container button:hover {
+    padding: 14.2px 34px;
+    transition: .55s;
+    font-size: 19px;
 }
 @media screen and (max-width:992px) {
     .cta-container button {
@@ -963,6 +1013,12 @@ nav .btn {
     margin: 0;
     padding: 0;
 }
+.footer-items {
+    display: flex;
+    // flex-direction: column;
+    text-align: start;
+    padding: 0 32px;
+}
 
 .footer ul li {
     padding: 10px 0;
@@ -975,13 +1031,13 @@ nav .btn {
 }
 
 .footer-header h1 {
-    margin: 120px auto;
+    margin: 120px 0 32px;
     font-size: 60px;
     line-height: 70px;
 }
 
 .footer-header div {
-    margin: 40px;
+    margin: 40px 40px 164px;
 }
 
 .footer-header a {
@@ -1002,9 +1058,17 @@ nav .btn {
 }
 @media screen and (max-width: 768px) {
     .footer-header h1 {
-        font-size: 46px;
+        font-size: 40px;
         margin: 0 0;
-        line-height: 50px;
+        line-height: 40px;
+    }
+    .footer-header {
+        text-align: start;
+        padding: 0 32px;
+
+        div {
+            margin: 32px 0;
+        }
     }
     .footer ul li {
         padding: 4px 0;
@@ -1013,3 +1077,8 @@ nav .btn {
         padding-top: 36px;
     }
 }
+// @media screen and (max-width:500px) {
+//     .footer-items {
+//         flex: 1;
+//     }
+// }

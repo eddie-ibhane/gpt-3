@@ -27,6 +27,11 @@ a {
   cursor: pointer;
 }
 
+a:hover {
+  font-size: 1.2rem;
+  transition: 0.5s;
+}
+
 .gradient__bg {
   /* safari 5.1+,chrome 10+ */
   /* opera 11.10+ */
@@ -73,6 +78,11 @@ nav .btn {
   padding: 4px 20px;
   background: #FF4820;
   margin-left: 20px;
+}
+
+nav .btn:hover {
+  background: #fff;
+  color: #FF4820;
 }
 
 .navbar-toggler {
@@ -144,6 +154,12 @@ nav .btn {
   border-bottom-right-radius: 5px;
 }
 
+.header-content__input button:hover {
+  background: #fff;
+  color: #FF4820;
+  transition: 0.7s;
+}
+
 .header-content__people {
   width: 100%;
   display: flex;
@@ -173,12 +189,12 @@ nav .btn {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-left: 1rem;
+  width: 100%;
 }
 
 .header-image img {
   width: 100%;
-  height: 600px;
+  height: auto;
 }
 
 @media screen and (max-width: 1196px) {
@@ -224,6 +240,18 @@ nav .btn {
   }
 }
 @media screen and (max-width: 768px) {
+  header-menu nav {
+    padding: 32px 0 !important;
+  }
+  .sign-up .nav-link {
+    margin: 6px 0px;
+  }
+  .sign-up .btn {
+    width: 100px;
+  }
+  nav .nav-item {
+    margin-left: 1px;
+  }
   .header-content h1 {
     font-size: 2.5rem;
     margin-top: 60px;
@@ -265,6 +293,12 @@ nav .btn {
   .header-content h1 {
     font-size: 2rem;
     padding: 0 1rem 0 0;
+  }
+  nav .navbar-brand {
+    padding: 32px;
+  }
+  .header-content {
+    padding: 0 32px;
   }
 }
 .partners .row {
@@ -642,6 +676,11 @@ nav .btn {
     margin: 4rem 0 0 0;
   }
 }
+@media screen and (max-width: 600px) {
+  .gpt3__possibility .row {
+    padding: 0 32px;
+  }
+}
 .cta-container {
   display: flex;
   justify-content: space-between;
@@ -684,6 +723,12 @@ nav .btn {
   outline: none;
   cursor: pointer;
   color: #fff;
+}
+
+.cta-container button:hover {
+  padding: 14.2px 34px;
+  transition: 0.55s;
+  font-size: 19px;
 }
 
 @media screen and (max-width: 992px) {
@@ -827,6 +872,12 @@ nav .btn {
   padding: 0;
 }
 
+.footer-items {
+  display: flex;
+  text-align: start;
+  padding: 0 32px;
+}
+
 .footer ul li {
   padding: 10px 0;
   font-size: 12px;
@@ -838,13 +889,13 @@ nav .btn {
 }
 
 .footer-header h1 {
-  margin: 120px auto;
+  margin: 120px 0 32px;
   font-size: 60px;
   line-height: 70px;
 }
 
 .footer-header div {
-  margin: 40px;
+  margin: 40px 40px 164px;
 }
 
 .footer-header a {
@@ -866,9 +917,16 @@ nav .btn {
 
 @media screen and (max-width: 768px) {
   .footer-header h1 {
-    font-size: 46px;
+    font-size: 40px;
     margin: 0 0;
-    line-height: 50px;
+    line-height: 40px;
+  }
+  .footer-header {
+    text-align: start;
+    padding: 0 32px;
+  }
+  .footer-header div {
+    margin: 32px 0;
   }
   .footer ul li {
     padding: 4px 0;
