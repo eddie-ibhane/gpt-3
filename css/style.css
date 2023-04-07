@@ -602,10 +602,10 @@ nav .btn:hover {
 }
 @media screen and (max-width: 600px) {
   .gpt3_features-section .gpt3_features .gpt3_feature-header .gpt3_feature-header-text h1 {
-    padding: 0 4rem 0 1rem;
+    padding: 0 4rem 0 0rem;
   }
   .gpt3_features-section .gpt3_features .gpt3_feature-header .gpt3_feature-header-para p {
-    padding: 0 4rem 0 1rem;
+    padding: 0 4rem 0 0rem;
   }
   .gpt3_features-section .gpt3_features .gpt3_features-container .gpt3_feature {
     flex-direction: column;
@@ -929,7 +929,7 @@ nav .btn:hover {
   }
   .footer-header {
     text-align: start;
-    padding: 0 32px;
+    padding: 0 1rem;
   }
   .footer-header div {
     margin: 32px 0;
