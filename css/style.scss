@@ -398,8 +398,9 @@ nav .btn:hover {
     margin: 6rem 0rem;
     padding: 4rem 2rem;
     justify-content: center;
-    align-items:start;
+    // align-items:start;
     background: var(--color-footer);
+    background-size: 100%;
     width: 100%;
 
     background:-moz-radial-gradient(circle at 30% -100%, #042c54 25%, rgba(4, 44, 84, 1) 85%, rgba(27, 120, 222, 1) 100%);
@@ -461,7 +462,7 @@ nav .btn:hover {
     align-items: center;
     
     h1 {
-        min-width: 400px;
+        // min-width: 400px;
         font-family: 'Manrope';
         font-weight: 800;
         font-size: 2.2rem;
@@ -557,10 +558,10 @@ nav .btn:hover {
         margin-left: -2rem;
     }
     .whatgpt3_feature-title {
-        padding: 0 4rem;
+        padding: 0 2rem;
     }
     .whatgpt3_feature-text {
-        padding: 0 4rem;
+        padding: 0 2rem;
     }
     .whatgpt3_features-heading{
         flex-direction: column;
@@ -568,14 +569,14 @@ nav .btn:hover {
 
         h1 {
             
-            padding: 0 4rem;
+            padding: 0 2rem;
 
             br {
                 display: none;
             }
         }
         p {
-            padding: 2rem 4rem 0;
+            padding: 2rem 2rem 0;
         }
     }
 }
@@ -796,7 +797,7 @@ nav .btn:hover {
 }
 @media screen and (max-width:992px) {
     .gpt3__possibility .row {
-        flex-direction: column;
+        // flex-direction: column;
         margin-top: 4rem;
         flex: 1;
     
@@ -807,9 +808,14 @@ nav .btn:hover {
     }
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:768px) {
     .gpt3__possibility .row {
-        padding: 0 32px;
+        flex-direction: column;
+        padding: 0 1rem;
+    }
+    .gpt3__possibility-content h1 {
+        padding: 22px 0;
+        font-size: 2rem;
     }
 }
 
@@ -864,10 +870,11 @@ nav .btn:hover {
     color: #fff;
 }
 .cta-container button:hover {
-    padding: 14.2px 34px;
     transition: .55s;
-    font-size: 19px;
+    background: #fff;
+    color: #000000;
 }
+
 @media screen and (max-width:992px) {
     .cta-container button {
         padding: 6px 28px;
@@ -994,10 +1001,10 @@ nav .btn:hover {
         font-size: 16px;
     }
     .blog-header h1 {
-        font-size: 40px;
+        font-size: 2rem;
     }
     .blog-header br {
-        display: none;
+        // display: none;
     }
     
 }
@@ -1062,7 +1069,7 @@ nav .btn:hover {
 }
 @media screen and (max-width: 768px) {
     .footer-header h1 {
-        font-size: 40px;
+        font-size: 2rem;
         margin: 0 0;
         line-height: 40px;
     }
